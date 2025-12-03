@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #2d3748;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #37517e 0%, #2d4263 100%);
+    color: white;
+    padding: 40px 50px;
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.header-note {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.header-note p {
+    margin: 0;
+    font-size: 0.95em;
+}
+
+.insights-intro {
+    background: #f7fafc;
+    padding: 30px 50px;
+    border-bottom: 3px solid #37517e;
+}
+
+.insights-intro h2 {
+    color: #37517e;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.insights-intro p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.dashboard-section {
+    padding: 50px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.dashboard-section h2 {
+    color: #2d3748;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.section-insight {
+    background: #fff5e6;
+    border-left: 4px solid #f59e0b;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    font-size: 1.05em;
+    border-radius: 4px;
+}
+
+/* Partner Cards */
+.partner-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.partner-card {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.partner-card.status-critical {
+    border-color: #ef4444;
+    background: #fef2f2;
+}
+
+.partner-card.status-warning {
+    border-color: #f59e0b;
+    background: #fffbeb;
+}
+
+.partner-card.status-good {
+    border-color: #10b981;
+    background: #f0fdf4;
+}
+
+.partner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.partner-header h3 {
+    font-size: 1.5em;
+    color: #1f2937;
+}
+
+.tier-badge {
+    background: #37517e;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75em;
+    font-weight: 600;
+}
+
+.health-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.metric {
+    text-align: center;
+}
+
+.metric-label {
+    display: block;
+    font-size: 0.85em;
+    color: #6b7280;
+    margin-bottom: 5px;
+}
+
+.metric-value {
+    display: block;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.metric-value.critical {
+    color: #ef4444;
+}
+
+.metric-value.warning {
+    color: #f59e0b;
+}
+
+.metric-value.good {
+    color: #10b981;
+}
+
+.action-needed {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    border-left: 4px solid #ef4444;
+}
+
+.action-needed.healthy {
+    border-left-color: #10b981;
+}
+
+/* Bottleneck Grid */
+.bottleneck-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.bottleneck-card {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.2s;
+}
+
+.bottleneck-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.bottleneck-card.priority-high {
+    border-color: #ef4444;
+}
+
+.bottleneck-card.priority-medium {
+    border-color: #f59e0b;
+}
+
+.bottleneck-header {
+    margin-bottom: 20px;
+}
+
+.priority-badge {
+    display: inline-block;
+    background: #ef4444;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.7em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.priority-badge.medium {
+    background: #f59e0b;
+}
+
+.bottleneck-header h3 {
+    font-size: 1.3em;
+    color: #1f2937;
+}
+
+.bottleneck-stats {
+    text-align: center;
+    margin: 25px 0;
+    padding: 20px;
+    background: #f9fafb;
+    border-radius: 8px;
+}
+
+.stat-large {
+    font-size: 3em;
+    font-weight: 700;
+    color: #37517e;
+    line-height: 1;
+}
+
+.bottleneck-stats p {
+    margin-top: 5px;
+    color: #6b7280;
+    font-size: 0.9em;
+}
+
+.impact {
+    background: #fef2f2;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+}
+
+.my-approach {
+    background: #f0f9ff;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.95em;
+}
+
+.my-approach ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.my-approach li {
+    margin-bottom: 5px;
+}
+
+/* Opportunities */
+.opportunities-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.opportunity-chart {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.opportunity-chart h3 {
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+
+.chart-insight {
+    margin-top: 20px;
+    background: #f0f9ff;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.95em;
+}
+
+/* Quick Wins */
+.quick-wins {
+    margin-top: 40px;
+    background: #f7fafc;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.quick-wins h3 {
+    font-size: 1.6em;
+    color: #37517e;
+    margin-bottom: 25px;
+}
+
+.wins-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.win-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #37517e;
+}
+
+.win-card h4 {
+    color: #37517e;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.win-card ul {
+    margin-left: 20px;
+}
+
+.win-card li {
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+/* Methodology */
+.methodology {
+    background: #f9fafb;
+}
+
+.methodology-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.method-column {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border-top: 4px solid #37517e;
+}
+
+.method-column h3 {
+    color: #37517e;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.method-column ul {
+    margin-left: 20px;
+}
+
+.method-column li {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+}
+
+/* Footer */
+footer {
+    background: #1f2937;
+    color: white;
+    padding: 40px 50px;
+    text-align: center;
+}
+
+.footer-content p {
+    margin-bottom: 15px;
+    font-size: 1.05em;
+    line-height: 1.8;
+}
+
+.footer-content p:last-child {
+    margin-bottom: 0;
+}
+
+.contact {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.95em;
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header,
+    .insights-intro,
+    .dashboard-section,
+    footer {
+        padding: 30px 25px;
+    }
+
+    .header-content h1 {
+        font-size: 1.8em;
+    }
+
+    .partner-cards,
+    .bottleneck-grid,
+    .opportunities-container,
+    .wins-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .health-metrics {
+        grid-template-columns: 1fr;
+    }
+}
