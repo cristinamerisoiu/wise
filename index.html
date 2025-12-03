@@ -11,293 +11,139 @@
     <div class="container">
         <header>
             <div class="header-content">
-                <h1>Wise Platform Operations Monitor</h1>
-                <p class="subtitle">Business Operations Framework for Partner Scale</p>
-                <div class="header-note">
-                    <p><strong>Built by Cristina</strong> | Demonstrating operational thinking for the Business Operations Manager role</p>
-                </div>
+                <div class="header-badge">OPERATIONS DASHBOARD</div>
+                <h1>Wise Platform Operations</h1>
+                <p class="subtitle">Partner Experience & Operational Health Monitor</p>
             </div>
         </header>
 
-        <div class="insights-intro">
-            <h2>🎯 My Approach: Bridging Product & Operations</h2>
-            <p>This dashboard represents how I'd create visibility and alignment between Wise Platform's Product-Engineering and Operations teams. Each metric is designed to surface blockers before they impact partner experience.</p>
-        </div>
-
         <!-- Partner Health Overview -->
         <section class="dashboard-section">
-            <h2>Partner Health Overview</h2>
-            <p class="section-insight"><strong>Why this matters:</strong> Enterprise partners need proactive monitoring. Red flags here trigger immediate cross-team alignment.</p>
+            <h2>Partner Health</h2>
             
             <div class="partner-cards">
                 <div class="partner-card status-critical">
                     <div class="partner-header">
                         <h3>Morgan Stanley</h3>
-                        <span class="tier-badge">Tier 1 Bank</span>
+                        <span class="status-dot critical"></span>
                     </div>
                     <div class="health-metrics">
                         <div class="metric">
-                            <span class="metric-label">SLA Compliance</span>
                             <span class="metric-value critical">67%</span>
+                            <span class="metric-label">SLA</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-label">Alert Efficiency</span>
                             <span class="metric-value warning">71%</span>
+                            <span class="metric-label">Alert Quality</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-label">Case Volume Trend</span>
-                            <span class="metric-value critical">↑ 34%</span>
+                            <span class="metric-value critical">+34%</span>
+                            <span class="metric-label">Volume</span>
                         </div>
                     </div>
-                    <div class="action-needed">
-                        <strong>Action needed:</strong> Capacity gap + high false positive alerts causing SLA breaches
-                    </div>
+                    <div class="issue-tag">Capacity gap + alert noise</div>
                 </div>
 
                 <div class="partner-card status-warning">
                     <div class="partner-header">
                         <h3>Monzo</h3>
-                        <span class="tier-badge">Challenger Bank</span>
+                        <span class="status-dot warning"></span>
                     </div>
                     <div class="health-metrics">
                         <div class="metric">
-                            <span class="metric-label">SLA Compliance</span>
                             <span class="metric-value warning">84%</span>
+                            <span class="metric-label">SLA</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-label">Alert Efficiency</span>
                             <span class="metric-value good">88%</span>
+                            <span class="metric-label">Alert Quality</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-label">Case Volume Trend</span>
-                            <span class="metric-value warning">↑ 18%</span>
+                            <span class="metric-value warning">+18%</span>
+                            <span class="metric-label">Volume</span>
                         </div>
                     </div>
-                    <div class="action-needed">
-                        <strong>Monitoring:</strong> Growing volume, need proactive capacity planning
-                    </div>
+                    <div class="issue-tag">Growth monitoring</div>
                 </div>
 
                 <div class="partner-card status-good">
                     <div class="partner-header">
                         <h3>Standard Chartered</h3>
-                        <span class="tier-badge">Tier 1 Bank</span>
+                        <span class="status-dot good"></span>
                     </div>
                     <div class="health-metrics">
                         <div class="metric">
-                            <span class="metric-label">SLA Compliance</span>
                             <span class="metric-value good">96%</span>
+                            <span class="metric-label">SLA</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-label">Alert Efficiency</span>
                             <span class="metric-value good">93%</span>
+                            <span class="metric-label">Alert Quality</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-label">Case Volume Trend</span>
-                            <span class="metric-value good">↓ 7%</span>
+                            <span class="metric-value good">-7%</span>
+                            <span class="metric-label">Volume</span>
                         </div>
                     </div>
-                    <div class="action-needed healthy">
-                        <strong>Healthy:</strong> Recent process improvements working well
-                    </div>
+                    <div class="issue-tag healthy">Healthy</div>
                 </div>
             </div>
         </section>
 
         <!-- Operational Bottlenecks -->
-        <section class="dashboard-section">
-            <h2>Operational Bottlenecks to Tackle First</h2>
-            <p class="section-insight"><strong>My prioritization framework:</strong> I focus on issues that create friction for multiple partners or require excessive manual touchpoints. These are my first 90-day targets.</p>
+        <section class="dashboard-section dark">
+            <h2>Priority Fixes</h2>
             
             <div class="bottleneck-grid">
-                <div class="bottleneck-card priority-high">
-                    <div class="bottleneck-header">
-                        <span class="priority-badge">HIGH PRIORITY</span>
-                        <h3>False Positive Alerts</h3>
-                    </div>
-                    <div class="bottleneck-stats">
-                        <div class="stat-large">38%</div>
-                        <p>of partner alerts are false positives</p>
-                    </div>
-                    <div class="impact">
-                        <strong>Impact:</strong> Partners experiencing alert fatigue, ops team wasting 127 hours/month on unnecessary reviews
-                    </div>
-                    <div class="my-approach">
-                        <strong>My approach:</strong>
-                        <ul>
-                            <li>Side-by-side sessions with ops agents to identify pattern</li>
-                            <li>Work with Product to refine thresholds</li>
-                            <li>Challenge risk team when being overly conservative</li>
-                        </ul>
-                    </div>
+                <div class="bottleneck-card">
+                    <div class="big-number">38%</div>
+                    <h3>False Positive Alerts</h3>
+                    <p>127 hours/month wasted on unnecessary reviews</p>
+                    <div class="fix">→ Refine thresholds, side-by-side analysis</div>
                 </div>
 
-                <div class="bottleneck-card priority-high">
-                    <div class="bottleneck-header">
-                        <span class="priority-badge">HIGH PRIORITY</span>
-                        <h3>Multi-Touchpoint Cases</h3>
-                    </div>
-                    <div class="bottleneck-stats">
-                        <div class="stat-large">4.2</div>
-                        <p>avg touchpoints to resolve complex cases</p>
-                    </div>
-                    <div class="impact">
-                        <strong>Impact:</strong> Poor partner experience, delayed resolutions, capacity drain
-                    </div>
-                    <div class="my-approach">
-                        <strong>My approach:</strong>
-                        <ul>
-                            <li>Map communication flows and identify redundancies</li>
-                            <li>Create escalation playbooks for common scenarios</li>
-                            <li>Build self-service resources for partners</li>
-                        </ul>
-                    </div>
+                <div class="bottleneck-card">
+                    <div class="big-number">4.2</div>
+                    <h3>Avg Touchpoints per Case</h3>
+                    <p>Too many handoffs = poor partner experience</p>
+                    <div class="fix">→ Escalation playbooks, self-service</div>
                 </div>
 
-                <div class="bottleneck-card priority-medium">
-                    <div class="bottleneck-header">
-                        <span class="priority-badge medium">MEDIUM PRIORITY</span>
-                        <h3>Unclear Partner Communication</h3>
-                    </div>
-                    <div class="bottleneck-stats">
-                        <div class="stat-large">23%</div>
-                        <p>of cases require clarification follow-up</p>
-                    </div>
-                    <div class="impact">
-                        <strong>Impact:</strong> Extended resolution times, partner confusion, repeated explanations
-                    </div>
-                    <div class="my-approach">
-                        <strong>My approach:</strong>
-                        <ul>
-                            <li>Standardize communication templates</li>
-                            <li>Create partner-specific documentation</li>
-                            <li>Train ops team on partner POV communication</li>
-                        </ul>
-                    </div>
+                <div class="bottleneck-card">
+                    <div class="big-number">23%</div>
+                    <h3>Need Clarification</h3>
+                    <p>Cases requiring follow-up communication</p>
+                    <div class="fix">→ Standard templates, partner docs</div>
                 </div>
 
-                <div class="bottleneck-card priority-medium">
-                    <div class="bottleneck-header">
-                        <span class="priority-badge medium">MEDIUM PRIORITY</span>
-                        <h3>Reactive Capacity Planning</h3>
-                    </div>
-                    <div class="bottleneck-stats">
-                        <div class="stat-large">2</div>
-                        <p>partners currently exceeding capacity forecast</p>
-                    </div>
-                    <div class="impact">
-                        <strong>Impact:</strong> SLA breaches during growth periods, scrambling for resources
-                    </div>
-                    <div class="my-approach">
-                        <strong>My approach:</strong>
-                        <ul>
-                            <li>Build predictive demand models based on partner growth signals</li>
-                            <li>Create early warning system for capacity gaps</li>
-                            <li>Establish clear hiring/outsourcing triggers</li>
-                        </ul>
-                    </div>
+                <div class="bottleneck-card">
+                    <div class="big-number">Q2</div>
+                    <h3>Capacity Ceiling</h3>
+                    <p>Will hit limit without intervention</p>
+                    <div class="fix">→ Hire 3 FTEs or outsource tier-1 cases</div>
                 </div>
             </div>
         </section>
 
         <!-- Impact Opportunities -->
         <section class="dashboard-section">
-            <h2>Impact Opportunities: Where to Invest</h2>
-            <p class="section-insight"><strong>My investment philosophy:</strong> Balance automation, process improvements, and strategic outsourcing. Quick wins build momentum for bigger changes.</p>
+            <h2>Automation & Capacity</h2>
             
-            <div class="opportunities-container">
-                <div class="opportunity-chart">
-                    <h3>Automation Potential by Case Type</h3>
+            <div class="charts-container">
+                <div class="chart-card">
+                    <h3>Automation Potential</h3>
                     <canvas id="automationChart"></canvas>
-                    <div class="chart-insight">
-                        <strong>Insight:</strong> 42% of current case volume is highly automatable. Starting with document verification and status updates would free 89 hours/week of ops capacity.
-                    </div>
+                    <p class="chart-note">42% of cases are automatable = 89 hours/week saved</p>
                 </div>
 
-                <div class="opportunity-chart">
-                    <h3>Demand vs Capacity Forecast (Next 6 Months)</h3>
+                <div class="chart-card">
+                    <h3>Demand vs Capacity</h3>
                     <canvas id="capacityChart"></canvas>
-                    <div class="chart-insight">
-                        <strong>Insight:</strong> Without intervention, we'll hit capacity ceiling in Q2. Need to hire 3 FTEs or outsource tier-1 cases by March.
-                    </div>
-                </div>
-            </div>
-
-            <div class="quick-wins">
-                <h3>🚀 My 30-Day Quick Wins</h3>
-                <div class="wins-grid">
-                    <div class="win-card">
-                        <h4>Week 1-2: Diagnostic Deep Dive</h4>
-                        <ul>
-                            <li>10 side-by-side sessions with ops agents</li>
-                            <li>Review 50+ partner escalation cases</li>
-                            <li>Interview Product and Ops leads</li>
-                            <li>Map current processes and pain points</li>
-                        </ul>
-                    </div>
-                    <div class="win-card">
-                        <h4>Week 3: Establish Metrics & Visibility</h4>
-                        <ul>
-                            <li>Launch this dashboard with real data</li>
-                            <li>Set baseline SLAs by partner tier</li>
-                            <li>Create weekly Ops-Product sync ritual</li>
-                            <li>Build escalation alert system</li>
-                        </ul>
-                    </div>
-                    <div class="win-card">
-                        <h4>Week 4: First Process Improvement</h4>
-                        <ul>
-                            <li>Tackle highest-impact bottleneck (likely false positives)</li>
-                            <li>Ship one automation or process change</li>
-                            <li>Document learnings and ROI</li>
-                            <li>Present findings to stakeholders</li>
-                        </ul>
-                    </div>
+                    <p class="chart-note">Need 3 FTEs by March to avoid capacity ceiling</p>
                 </div>
             </div>
         </section>
 
-        <!-- Methodology -->
-        <section class="dashboard-section methodology">
-            <h2>How I Built This Framework</h2>
-            <div class="methodology-content">
-                <div class="method-column">
-                    <h3>🔍 Research Approach</h3>
-                    <ul>
-                        <li>Analyzed Wise's public partner announcements and case studies</li>
-                        <li>Drew from my experience building operational infrastructure for B2B platforms</li>
-                        <li>Applied demand-capacity planning from scaling marketplace operations</li>
-                        <li>Incorporated FinCrime operational patterns I've observed</li>
-                    </ul>
-                </div>
-                <div class="method-column">
-                    <h3>💡 Key Assumptions</h3>
-                    <ul>
-                        <li>Tier 1 banks require 95%+ SLA compliance vs 85% for challengers</li>
-                        <li>Alert fatigue is a common scaling pain point in FinCrime ops</li>
-                        <li>Partner growth creates non-linear operational demand</li>
-                        <li>Most operational friction comes from unclear handoffs between teams</li>
-                    </ul>
-                </div>
-                <div class="method-column">
-                    <h3>📊 Metrics Selection Logic</h3>
-                    <ul>
-                        <li>SLA compliance = table stakes for enterprise trust</li>
-                        <li>Alert efficiency = proxy for process maturity</li>
-                        <li>Touchpoint count = indicator of process complexity</li>
-                        <li>Capacity forecast = prevents reactive firefighting</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <div class="footer-content">
-                <p><strong>Why I'm the right fit for this role:</strong></p>
-                <p>I've spent my career building bridges between technical teams and operations. I understand both languages—I can challenge Product when they ignore operational impact, and push Ops when they're too risk-averse. I build systems that scale, not just processes that work today. And most importantly, I obsess over the partner experience because that's what drives sustainable growth.</p>
-                <p class="contact">Built with operational thinking by Cristina | Ready to discuss how I'd apply this at Wise</p>
-            </div>
-        </footer>
     </div>
 
     <script src="script.js"></script>
